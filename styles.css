@@ -1,0 +1,60 @@
+body {
+    background-color: thistle;
+    color: white;
+}
+.container {
+    border: 1px solid;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: blueviolet ;
+    border-radius: 50px;
+    width: 512px;
+    height: 512px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+input {
+    background-color: transparent;
+    display: inline-block;
+    width: 30%;
+    color: white;
+    font-size: 30px;
+    margin: 25px;
+    border-radius: 20px;
+    border: 2px solid;
+    text-align: center;
+    outline: none;   
+}
+
+::placeholder{
+    color: white;
+}
+
+label{
+    font-size: 25px;
+}
+
+.date{
+    border: 2px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: white;
+    margin: 20px 30px 30px;
+    width: 55px;
+    color: black;
+}
+.Submit {
+    font-size: 30px;
+    border-radius: 10px;
+    
+}
+.result{
+    font-size: 20px;
+}
+
+.p {
+    color: black;
+}
