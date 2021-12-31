@@ -12,13 +12,18 @@ var d;
 var y1;
 var m1;
 var d1;
+
+
+month = month+1;
 console.log(years);
 [".day", ".month", ".year"].forEach(element => {
     document.querySelector(element).addEventListener("keyup", function (e) {
+       
         bday = e.target.value;
         y = document.querySelector(".year").value;
         m = document.querySelector(".month").value;
         d = document.querySelector(".day").value;
+    
         if (month >= m) {
             y1 = years - y;
             m1 = month - m;
@@ -54,8 +59,14 @@ console.log(years);
 
 
         document.querySelector(".Submit").addEventListener("click", function () {
+            if(d<=31&&m<=12&&y<=years)
             document.querySelector("p").innerText = "You are " + y1 + " Years, " + m1 + " Months, " + d1 + " days old !";
-
+          
+            else {
+                
+                document.querySelector("p").innerText="Invalid input ! Enter correct D.O.B "
+                
+            }
         });
 
     });
@@ -70,7 +81,3 @@ function toggleColor() {
 }
 
 toggleColor();
-
-// var age = (byear-years);
-
-// document
