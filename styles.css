@@ -58,3 +58,19 @@ label{
 .p {
     color: black;
 }
+
+
+
+@media screen and (max-width:700px) {
+    body{
+        /* background: rgb(179, 107, 179); */
+    }
+    .container{
+        width: unset;
+        height: unset;
+        border-radius: 0;
+    }
+    button{
+        margin-bottom: 10px;
+    }
+}
