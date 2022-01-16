@@ -31,7 +31,7 @@ console.log(years);
         }
         else if (month < m) {
             y1 = years - y - 1;
-            m1 = 12 - (m-month +1);
+            m1 = 12 - (m-month);
             
 
         }
